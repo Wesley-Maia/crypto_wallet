@@ -2,7 +2,9 @@
 <p>Wesley Maia</p>
 <p> A data de hoje é: <%= DateTime.now() %> (using DateTime)</p>
 
-<p> A data de hoje é: <%= Date.today() %> (using Date)</p>
+<p> A data de hoje é: <%= Date.today() %> (using Date - US)</p>
+
+<p> A data de hoje é: <%= data_br(Date.today()) %> (using Date - BR)</p>
 
 <%= link_to "Cadastro de Moedas", coins_path %>
 
