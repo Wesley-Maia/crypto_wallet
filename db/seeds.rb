@@ -8,22 +8,26 @@
 
 puts "Cadastrando moedas..."
 
-Coin.create!(
-	description: "Bitcoin",
-	acronym: "BTC",
-	url_image: "https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=002",
-)
+listCoins = [
+	{
+    description: "Ethereum",
+    acronym: "ETH",
+    url_image: "https://cryptologos.cc/logos/ethereum-eth-logo.png?v=002",
+  },
+  {
+    description: "Ethereum",
+    acronym: "ETH",
+    url_image: "https://cryptologos.cc/logos/ethereum-eth-logo.png?v=002",
+  },
+  {
+    description: "Dash",
+    acronym: "DASH",
+    url_image: "https://cryptologos.cc/logos/dash-dash-logo.png?v=002",
+  },
+]
 
-Coin.create!(
-	description: "Ethereum",
-	acronym: "ETH",
-	url_image: "https://cryptologos.cc/logos/ethereum-eth-logo.png?v=002",
-)
-
-Coin.create!(
-	description: "Dash",
-	acronym: "DASH",
-	url_image: "https://cryptologos.cc/logos/dash-dash-logo.png?v=002",
-)
+listCoins.each do |coin|
+	Coin.find_or_create_by(coin)
+end
 
 puts "Moedas cadastradas!"
