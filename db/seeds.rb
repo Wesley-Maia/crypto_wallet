@@ -31,3 +31,18 @@ listCoins.each do |coin|
 end
 
 puts "Moedas cadastradas!"
+
+puts "=========================================================="
+puts "Cadastrando tipos..."
+
+MiningType.create!(
+	description: "Proof of Work",
+	acronym: "PoW",
+)
+
+MiningType.create!(
+	description: "Proof of Stake",
+	acronym: "PoS",
+)
+
+puts "Tipos cadastrados!"
