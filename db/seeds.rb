@@ -26,9 +26,9 @@ puts "Cadastrando moedas..."
 
 listCoins = [
 	{
-    description: "Ethereum",
-    acronym: "ETH",
-    url_image: "https://cryptologos.cc/logos/ethereum-eth-logo.png?v=002",
+    description: "Bitcoin",
+    acronym: "BTC",
+    url_image: "https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=002",
     mining_type: MiningType.find_by(acronym: 'PoW'),
   },
   {
