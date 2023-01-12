@@ -4,7 +4,7 @@
 <p>O idioma usado nessa aplicação é: <strong> <%= locale %> </strong> </p>
 
 <p> A data de hoje é: <%= DateTime.now() %> (using DateTime)</p>
-<p> A data de hoje é: <%= Date.today %> (using Date - US)</p>
+<p> A data de hoje é: <%= I18n.l(Date.today)%> - <%= locale %> </p>
 <p> A data de hoje é: <%= data_br(Date.today()) %> (using Date - BR)</p>
 
 <%= render "menu"%>
