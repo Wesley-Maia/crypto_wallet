@@ -1,7 +1,7 @@
 <h1>Seja Bem-vindo!</h1>
 <p>Wesley Maia</p>
 
-<p>O idioma usado nessa aplicação é: <strong> <%= locale %> </strong> </p>
+<p>O idioma usado nessa aplicação é: <strong> <%= t('actual_locale') %> </strong> </p>
 
 <p> A data de hoje é: <%= DateTime.now() %> (using DateTime)</p>
 <p> A data de hoje é: <%= I18n.l(Date.today)%> - <%= locale %> </p>
